@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <title>XZB ak IOI!</title>
+    <style>
+        *{
+			color:#191970;
+			transition:all 0.3s ease;
+			text-shadow:0 0 20px #e1ffff;
+		}
+        body
+        {
+            background-color:#87ceeb;
+            text-align:center;
+        }
+        header
+        {
+            margin: 2cm 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>2x6_81</h1>
+        <img src="https://www.henrytb.cf/pic/89127.png" alt="XZB是巨佬就对了" style="width: 200px; height: 200px; ">
+        <h2>仅仅小学六年级就AK了N次IOI的巨佬</h2>
+        <p>He has AKed IOI <span class="counter">0</span> times.</p>
+        <p>他已经被您膜拜了 <span class="counter">0</span> 次。</p>
+		<button id="mobai" type="button" class="el-button el-button--primary is-plain is-round">点击膜拜</button>
+		<script>
+			var counter = 0;
+			document.getElementById("mobai").onclick = function() {
+				++counter;
+				for(let item of document.getElementsByClassName("counter")) {
+					item.innerText = counter;
+				}
+                if(counter==10)
+                {
+                    alert("XZB:\"来呀，继续膜我呀\"");
+                }
+                if(counter==20)
+                {
+                    alert("XZB:\"我最巨了，快继续%我！\"");
+                }
+                if(counter==50)
+                {
+                    alert("XZB:\"不错不错，看来我是最厉害的\"");
+                    
+                }
+			}
+		</script>
+    </header>
+    <p>
+	</p>
+</body>
